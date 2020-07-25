@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabFragment1">
+
+    <!-- TODO: Update blank fragment layout -->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/martial_celebrating"
+        android:layout_alignParentTop="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/grey_rounded_background">
+
+        <ImageView
+            android:id="@+id/martial_small_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/martial_image"
+            android:adjustViewBounds="true"
+            android:maxHeight="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anthony Martial"
+            android:textColor="@android:color/darker_gray"
+            android:layout_toRightOf="@id/martial_small_image"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Anthony Martial scored in a 4-0 beatdown over Manchester City. The win was comprehensive in nature much to the delight of the visting fans"
+            android:layout_below="@id/martial_small_image"
+            android:layout_marginTop="16dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+</FrameLayout>

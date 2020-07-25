@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEFF1"
+    tools:context=".Main2Activity">
+
+    <ImageView
+        android:id="@+id/image_leno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/martial_image"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:maxWidth="70dp"
+        android:adjustViewBounds="true"
+        />
+
+    <TextView
+        android:id="@+id/leno_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anthony Martial"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_toRightOf="@id/image_leno"
+        android:layout_alignTop="@id/image_leno"
+        android:layout_marginLeft="8dp"/>
+
+    <TextView
+        android:id="@+id/leno_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1000 subscribers"
+        android:layout_below="@id/leno_title"
+        android:layout_alignLeft="@id/leno_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/image_leno"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_edges">
+
+        <Button
+            android:id="@+id/favourites_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to Favourites"
+            android:background="@drawable/button_rounded_edges"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:minHeight="35dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"/>
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_bell_dark"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bell_background"
+            />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/favourites_button"
+            android:layout_marginTop="16dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:tabTextColor="#90A4AE"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/tab_layout" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

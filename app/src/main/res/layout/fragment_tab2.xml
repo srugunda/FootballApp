@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabFragment2">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/grey_rounded_background">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14:30"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time"
+            android:text="23rd Aug"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date"
+            android:layout_marginTop="45dp"
+            android:text="1/64"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <ImageView
+            android:id="@+id/chelsea_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/date"
+            android:adjustViewBounds="true"
+            android:maxHeight="80dp"
+            android:src="@drawable/chelsea_logo" />
+
+        <TextView
+            android:id="@+id/chelsea_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/number"
+            android:layout_marginLeft="86dp"
+            android:text="Chelsea"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <TextView
+            android:id="@+id/chelsea_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_toRightOf="@id/chelsea_logo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"/>
+
+      <TextView
+          android:id="@+id/mid"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textAppearance="@style/TextAppearance.AppCompat.Large"
+          android:text=":"
+          android:layout_toRightOf="@id/chelsea_score"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="30dp"/>
+
+      <TextView
+          android:id="@+id/city_score"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textAppearance="@style/TextAppearance.AppCompat.Large"
+          android:text="2"
+          android:layout_toRightOf="@id/mid"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="30dp"/>
+
+      <ImageView
+          android:id="@+id/city_logo"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:layout_toRightOf="@id/city_score"
+          android:adjustViewBounds="true"
+          android:maxHeight="80dp"
+          android:src="@drawable/manchester_city_logo"
+          android:layout_alignTop="@id/chelsea_logo"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Man City"
+          android:textAppearance="@style/TextAppearance.AppCompat.Small"
+          android:layout_alignTop="@id/chelsea_title"
+          android:layout_toRightOf="@id/city_score"
+          android:layout_marginLeft="22dp"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="55"
+          android:textColor="@android:color/holo_red_dark"
+          android:layout_below="@id/mid"
+          android:layout_toRightOf="@id/chelsea_score"
+          android:layout_marginLeft="1dp"
+          android:layout_marginTop="8dp"
+          android:textAppearance="@style/TextAppearance.AppCompat.Small"
+          android:background="@drawable/boundary_rounded_grey_background"
+          />
+    </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="12dp"
+          android:background="@drawable/grey_rounded_background">
+
+          <TextView
+              android:id="@+id/time2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="14:30"
+              android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+          <TextView
+              android:id="@+id/date2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/time2"
+              android:text="23rd Aug"
+              android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+          <TextView
+              android:id="@+id/number2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/date2"
+              android:layout_marginTop="45dp"
+              android:text="1/64"
+              android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+          <ImageView
+              android:id="@+id/united_logo"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+              android:layout_toRightOf="@id/date2"
+              android:adjustViewBounds="true"
+              android:maxHeight="80dp"
+              android:src="@drawable/man_united_logo" />
+
+          <TextView
+              android:id="@+id/united_title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignTop="@id/number2"
+              android:layout_marginLeft="82dp"
+              android:text="Man United"
+              android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+          <TextView
+              android:id="@+id/united_score"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="3"
+              android:textAppearance="@style/TextAppearance.AppCompat.Large"
+              android:layout_toRightOf="@id/united_logo"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="30dp"/>
+
+          <TextView
+              android:id="@+id/mid2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textAppearance="@style/TextAppearance.AppCompat.Large"
+              android:text=":"
+              android:layout_toRightOf="@id/united_score"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="30dp"/>
+
+          <TextView
+              android:id="@+id/arsenal_score"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textAppearance="@style/TextAppearance.AppCompat.Large"
+              android:text="2"
+              android:layout_toRightOf="@id/mid2"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="30dp"/>
+
+          <ImageView
+              android:id="@+id/arsenal_image"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="25dp"
+              android:layout_toRightOf="@id/arsenal_score"
+              android:adjustViewBounds="true"
+              android:maxHeight="80dp"
+              android:src="@drawable/arsenal_logo"
+              android:layout_alignTop="@id/united_logo"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Arsenal"
+              android:textAppearance="@style/TextAppearance.AppCompat.Small"
+              android:layout_alignTop="@id/united_title"
+              android:layout_toRightOf="@id/arsenal_score"
+              android:layout_marginLeft="35dp"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="55"
+              android:textColor="@android:color/holo_red_dark"
+              android:layout_below="@id/mid2"
+              android:layout_toRightOf="@id/united_score"
+              android:layout_marginLeft="1dp"
+              android:layout_marginTop="8dp"
+              android:textAppearance="@style/TextAppearance.AppCompat.Small"
+              android:background="@drawable/boundary_rounded_grey_background"
+              />
+      </RelativeLayout>
+
+  </LinearLayout>
+</FrameLayout>
